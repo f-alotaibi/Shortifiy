@@ -1,8 +1,21 @@
+<!DOCTYPE HTML>
 <html>
-<body>
-<form action="/gen" method="POST">
-URL NAME: <input type="text" name="url_name">
-<input type="submit" value="Submit">
-</form>
-</body>
+	<head>
+		<title>Shortifiy - Short your urls</title>
+		<script type="text/javascript" charset="UTF-8" src="js/app.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body class="text-center">
+		<div class="container-md" style="max-width: 30%">
+			<h2>Shortifiy - Short your urls</h2>
+			<input type="url" class="form-control" id="urlBox" placeholder="https://example.com" required>
+			<span id="sUrl"></span>
+			<br>
+			<button class="btn btn-primary" style="cursor: pointer;" onclick="request();">Shorten URL</button>
+			<br>
+			<p> Made by: Faleh Alotaibi <a href="https://github.com/f.alotaibi/Shortifiy">Source code</a>
+			</p>
+		</div>
+	</body>
 </html>
